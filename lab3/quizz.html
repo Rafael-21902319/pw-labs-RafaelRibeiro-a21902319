@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rafael Ribeiro">
+    <meta name="keywords" content="12345">
+    <meta name="description" content="Website sobre cidadeNome">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon_dino.ico" />
+    <title>Lourinha</title>
+    <style>
+        .label-format {
+            display: inline-block;
+            width: 5rem;
+            margin: 0.5rem;
+        }
+    </style>
+
+</head>
+
+<body style="background-color: blanchedalmond">
+    <H1>Lourinha</H1>
+    <img src="img/lourinha_cidade.jpg">
+    <br>
+    <table>
+        <tr>
+            <td>
+                <a href="https://lab1rafaelribeiro.herokuapp.com/lab3/index.html" target="_blank"
+                    rel="noreferrer noopener">Introdução |</a>
+            </td>
+            <td>
+                <a href="https://lab1rafaelribeiro.herokuapp.com/lab3/local.html" target="_blank"
+                    rel="noreferrer noopener">Localização |</a>
+            </td>
+            <td>
+                <a href="https://lab1rafaelribeiro.herokuapp.com/lab3/multimedia.html" target="_blank"
+                    rel="noreferrer noopener"><b>Multimédia |</b></a>
+            </td>
+            <td>
+                <a href="https://lab1rafaelribeiro.herokuapp.com/lab3/info.html" target="_blank"
+                    rel="noreferrer noopener">Informações |</a>
+            </td>
+            <td>
+                <a href="https://lab1rafaelribeiro.herokuapp.com/lab3/quizz.html" target="_blank"
+                    rel="noreferrer noopener">Quizz |</a>
+            </td>
+            <td>
+                <a href="https://lab1rafaelribeiro.herokuapp.com/" target="_blank" rel="noreferrer noopener">Home</a>
+            </td>
+        </tr>
+    </table>
+    <h3>Quizz</h3>
+
+
+    <form action="mailto:filiperafa395@gmail.com" autocomplete="on" method="post">
+        <fieldset>
+            <legend>Identificação do utilizador:</legend>
+            <label class="label-format" for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" autofocus placeholder="Nome" required><br>
+            <label class="label-format" for="Apelido">Apelido:</label>
+            <input type="text" id="Apelido" name="Apelido" placeholder="Apelido" required><br>
+            <label class="label-format" for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Quizz:</legend>
+            <label class="label-format" style = width:30rem; for="dino">Como se chama o dinossauro encontrado pela primeira vez na Lourinhã:</label>
+            <input type="text" id="dino" name="dino"><br>
+            <legend>Em que pais se situa a Lourinhã:</legend>
+            <input type="radio" id="pais" name="pais" value="inglaterra">
+            <label for="pais">Inglaterra</label><br>
+            <input type="radio" id="pais" name="pais" value="portugal">
+            <label for="pais">Portugal</label><br>
+            <input type="radio" id="pais" name="pais" value="alemanha">
+            <label for="pais">Alemanha</label><br>
+            <label class="label-format" style = width:30rem; for="find_dino">Em que ano foi encontrado o dinossauro na Lourinhã:</label>
+            <input type="date" id="find_dino" name="find_dino"><br>
+            <label class="label-format" style = width:30rem; for = "satisfacao">Qual a nota de satisfação na sua visita à Lourinhã:</label>
+            <input type = "range" id ="satisfacao" min ="0" max = "10" name = "satisfacao" value = "0" oninput="satisfacaoN.value = parseInt(satisfacao.value)"><output name="satisfacaoN" for="satisfacao">0</output><br> 
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <br>
+</body>
+
+</html>
